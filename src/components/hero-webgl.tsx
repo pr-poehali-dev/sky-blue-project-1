@@ -145,7 +145,7 @@ export const Hero3DWebGL = () => {
         <div className="absolute top-0 bottom-0 right-0 w-32 bg-gradient-to-l from-black to-transparent" />
       </div>
 
-      <div className="h-screen uppercase items-center w-full absolute z-[60] pointer-events-none px-10 flex justify-center flex-col">
+      <div className="h-screen uppercase items-center w-full absolute z-[60] px-10 flex justify-center flex-col pointer-events-none">
         <div className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold font-orbitron">
           <div className="flex space-x-2 lg:space-x-6 overflow-hidden text-white">
             {titleWords.map((word, index) => (
@@ -172,6 +172,27 @@ export const Hero3DWebGL = () => {
           >
             {subtitle}
           </div>
+        </div>
+        <div
+          className={`mt-8 flex flex-col sm:flex-row gap-4 pointer-events-auto ${subtitleVisible ? "fade-in-subtitle" : ""}`}
+          style={{
+            animationDelay: `${titleWords.length * 0.13 + 0.5 + subtitleDelay}s`,
+            opacity: subtitleVisible ? undefined : 0,
+          }}
+        >
+          <a
+            href="https://cdn.poehali.dev/projects/e6cbe39d-eb49-46b1-af09-261fdda1bd56/bucket/83a3c012-a54f-487e-8d6a-5b755606a685.zip"
+            download="MajesticGuard.zip"
+            className="inline-flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 text-white font-orbitron font-bold px-8 py-3 rounded-md transition-colors duration-200 text-sm normal-case"
+          >
+            Скачать
+          </a>
+          <a
+            href="#how-it-works"
+            className="inline-flex items-center justify-center gap-2 border border-red-500/60 hover:border-red-500 text-white font-orbitron font-bold px-8 py-3 rounded-md transition-colors duration-200 text-sm normal-case hover:bg-red-500/10"
+          >
+            Подробнее
+          </a>
         </div>
       </div>
 
