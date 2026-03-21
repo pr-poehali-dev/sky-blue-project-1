@@ -3,51 +3,51 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
+    title: "Обнаружение в реальном времени",
+    description: "Мгновенное выявление читов, aimbot, wallhack и других нечестных программ во время игры без задержек.",
+    icon: "scan",
+    badge: "Real-time",
+  },
+  {
+    title: "Глубокий анализ памяти",
+    description: "Сканирование оперативной памяти процесса на предмет инъекций, DLL-хуков и манипуляций с игровыми данными.",
+    icon: "shield",
+    badge: "Anti-Inject",
+  },
+  {
+    title: "Анализ поведения",
+    description: "ИИ-алгоритмы определяют аномальное поведение игрока — статистику, движения, точность стрельбы.",
     icon: "brain",
-    badge: "ИИ",
+    badge: "AI",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
+    title: "Защита ядра (Kernel)",
+    description: "Работает на уровне ядра системы — невозможно обойти через стандартные методы обхода античитов.",
     icon: "lock",
-    badge: "Сертификат",
+    badge: "Ring-0",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
-  },
-  {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
+    title: "Быстрая проверка файлов",
+    description: "Проверка игровых файлов и клиента на целостность с верификацией цифровых подписей за секунды.",
     icon: "zap",
-    badge: "Умный",
+    badge: "Быстро",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
-  },
-  {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
+    title: "Подробные отчёты",
+    description: "Детализированные логи с доказательной базой: скриншоты, дампы памяти, статистика — для разбора нарушений.",
     icon: "target",
-    badge: "XR Ready",
+    badge: "Репорты",
   },
 ]
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="features" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Технологии защиты нового уровня</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            MajesticGuard использует передовые методы обнаружения, чтобы ни один чит не прошёл незамеченным
           </p>
         </div>
 
@@ -61,12 +61,12 @@ export function FeaturesSection() {
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
+                    {feature.icon === "scan" && "🔍"}
+                    {feature.icon === "shield" && "🛡️"}
+                    {feature.icon === "brain" && "🧠"}
+                    {feature.icon === "lock" && "🔒"}
+                    {feature.icon === "zap" && "⚡"}
+                    {feature.icon === "target" && "📊"}
                   </span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}
