@@ -16,7 +16,12 @@ export function CTASection() {
             <Button
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 pulse-button text-lg px-8 py-4"
-              onClick={() => document.getElementById("download")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() => {
+                const a = document.createElement("a")
+                a.href = "https://cdn.poehali.dev/projects/e6cbe39d-eb49-46b1-af09-261fdda1bd56/bucket/83a3c012-a54f-487e-8d6a-5b755606a685.zip"
+                a.download = "MajesticGuard.zip"
+                a.click()
+              }}
             >
               Скачать MajesticGuard
             </Button>

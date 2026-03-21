@@ -41,7 +41,12 @@ export function Navbar() {
           <div className="hidden md:block">
             <Button
               className="bg-red-500 hover:bg-red-600 text-white font-geist border-0"
-              onClick={() => document.getElementById("download")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() => {
+                const a = document.createElement("a")
+                a.href = "https://cdn.poehali.dev/projects/e6cbe39d-eb49-46b1-af09-261fdda1bd56/bucket/83a3c012-a54f-487e-8d6a-5b755606a685.zip"
+                a.download = "MajesticGuard.zip"
+                a.click()
+              }}
             >
               Скачать Guard
             </Button>
@@ -91,7 +96,15 @@ export function Navbar() {
                 FAQ
               </a>
               <div className="px-3 py-2">
-                <Button className="w-full bg-red-500 hover:bg-red-600 text-white font-geist border-0">
+                <Button
+                  className="w-full bg-red-500 hover:bg-red-600 text-white font-geist border-0"
+                  onClick={() => {
+                    const a = document.createElement("a")
+                    a.href = "https://cdn.poehali.dev/projects/e6cbe39d-eb49-46b1-af09-261fdda1bd56/bucket/83a3c012-a54f-487e-8d6a-5b755606a685.zip"
+                    a.download = "MajesticGuard.zip"
+                    a.click()
+                  }}
+                >
                   Скачать Guard
                 </Button>
               </div>
