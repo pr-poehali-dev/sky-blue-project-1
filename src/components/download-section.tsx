@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Icon from "@/components/ui/icon"
 
-const FILE_URL = "https://cdn.poehali.dev/projects/e6cbe39d-eb49-46b1-af09-261fdda1bd56/bucket/83a3c012-a54f-487e-8d6a-5b755606a685.zip"
-const FILE_NAME = "MajesticGuard.zip"
+const FILE_URL = "https://cdn.poehali.dev/projects/e6cbe39d-eb49-46b1-af09-261fdda1bd56/bucket/dcf3c645-5659-4c79-95e9-974838c71ceb.rar"
+const FILE_NAME = "MajesticGuard.rar"
 
 export function DownloadSection() {
   const handleDownload = () => {
